@@ -211,11 +211,12 @@
 <!-- MAGIC WORDS INFO -->
 <div class="container">
   <div class="magic-words-box">
-    <h3>🔐 Deine persönlichen 3 Geheimworte</h3>
+    <h3>🔐 DEIN EINZIGARTIGER ACCOUNT - 3 GEHEIMWORTE</h3>
     <div class="words" id="magic-words-display">Berg-Adler-Nacht</div>
-    <p>🔑 Mit diesen 3 Worten kannst du jederzeit zu deinem Profil zurückkehren!</p>
-    <p style="margin-top:0.5rem; opacity:0.8; font-size:0.85rem;">Alle deine Gespräche und Fortschritte werden automatisch gespeichert.</p>
-    <button class="btn" style="background:rgba(0,0,0,0.2); color:white; margin-top:1rem; border:none;" onclick="copyWords()">📋 Worte kopieren</button>
+    <p>✅ Diese 3 Worte sind NUR FÜR DICH!</p>
+    <p style="margin-top:1rem; opacity:0.95;">🔑 <strong>Mit diesen Worten kommst du IMMER zu DEINEM Profil zurück</strong></p>
+    <p style="margin-top:0.5rem; opacity:0.8; font-size:0.85rem;">• Schreib die Worte auf oder speichere sie<br>• Jeder Besucher bekommt ANDERE Worte<br>• Browser schließen? Mit den Worten kommst du direkt zurück!<br>• Alle deine Gespräche sind unter DEINEN Worten gespeichert</p>
+    <button class="btn" style="background:rgba(0,0,0,0.2); color:white; margin-top:1rem; border:none;" onclick="copyWords()">📋 Worte kopieren & speichern</button>
   </div>
 </div>
 
@@ -282,12 +283,20 @@
 <script>
 // ============ 3-WORT SYSTEM ============
 
+// 100+ einzigartige deutsche Worte für maximale Variation
 const WORD_POOL = [
   'Berg', 'Adler', 'Nacht', 'Stern', 'Wasser', 'Licht', 'Wald', 'Regen', 'Wind', 'Feuer',
   'Mond', 'Sonne', 'Stein', 'Rose', 'Wolf', 'Bär', 'Fuchs', 'Eule', 'See', 'Bach',
   'Nebel', 'Eis', 'Gold', 'Silber', 'Kupfer', 'Eisen', 'Holz', 'Erde', 'Luft', 'Auge',
   'Schwert', 'Schild', 'Turm', 'Brücke', 'Pfad', 'Tor', 'Schloss', 'König', 'Ritter', 'Narr',
-  'Herz', 'Hand', 'Geist', 'Seele', 'Traum', 'Schatten', 'Echo', 'Klang', 'Stimme', 'Stille'
+  'Herz', 'Hand', 'Geist', 'Seele', 'Traum', 'Schatten', 'Echo', 'Klang', 'Stimme', 'Stille',
+  'Lanze', 'Dorn', 'Blatt', 'Blume', 'Baum', 'Vogel', 'Fisch', 'Wurm', 'Licht', 'Schatten',
+  'Blitz', 'Donner', 'Schnee', 'Rabe', 'Schwan', 'Falk', 'Geier', 'Drache', 'Phönix', 'Sphinx',
+  'Dorf', 'Stadt', 'Land', 'Meer', 'Fluss', 'Grotte', 'Tal', 'Hügel', 'Ebene', 'Wüste',
+  'Wein', 'Brot', 'Fisch', 'Fleisch', 'Obst', 'Kraut', 'Pilz', 'Beere', 'Apfel', 'Kirsche',
+  'Messer', 'Gabel', 'Löffel', 'Glas', 'Becher', 'Teller', 'Napf', 'Krug', 'Fass', 'Truhe',
+  'Tür', 'Fenster', 'Wand', 'Dach', 'Boden', 'Stein', 'Mauer', 'Gang', 'Saal', 'Kammer',
+  'Feuer', 'Kerze', 'Laterne', 'Feuerbrand', 'Fackel', 'Lunge', 'Magen', 'Leber', 'Niere', 'Hirn'
 ];
 
 let userWords = '';
